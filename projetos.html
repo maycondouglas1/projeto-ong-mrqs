@@ -19,7 +19,7 @@
     <!-- Cabeçalho principal -->
     <header>
       <div class="header-inner container">
-        <a href="index.html" class="brand">ONG MRQS</a>
+        <a href="#/" class="brand">ONG MRQS</a>
         <input type="checkbox" id="nav-toggle" aria-label="Abrir menu" />
         <label for="nav-toggle" aria-hidden="true">
           <span class="hamburger" aria-hidden="true">
@@ -30,9 +30,9 @@
         </label>
         <nav class="primary-nav">
           <ul class="container">
-            <li><a href="index.html">Início</a></li>
-            <li class="active"><a href="projetos.html">Projetos</a></li>
-            <li><a href="cadastro.html">Cadastre-se</a></li>
+            <li><a href="#/">Início</a></li>
+            <li class="active"><a href="#/projetos">Projetos</a></li>
+            <li><a href="#/cadastro">Cadastre-se</a></li>
           </ul>
         </nav>
       </div>
@@ -43,120 +43,7 @@
       <!-- Seção: Projetos em Andamento -->
       <section>
         <h2>Projetos em Andamento</h2>
-        <div class="row">
-          <article class="card col-12 md:col-6">
-            <div class="card-header">Projeto Educação para Todos</div>
-            <div class="card-body">
-              <figure>
-                <img
-                  src="assets/images/projeto-educacao.jpg"
-                  alt="Crianças estudando em sala de aula"
-                  width="600"
-                  height="400"
-                />
-                <figcaption>Projeto Educação para Todos em ação</figcaption>
-              </figure>
-              <p>
-                O projeto visa oferecer aulas de reforço escolar e atividades
-                extracurriculares para crianças e adolescentes em situação de
-                vulnerabilidade social, proporcionando melhorias significativas
-                no desempenho escolar e desenvolvimento pessoal.
-              </p>
-              <ul>
-                <li>
-                  <span class="badge badge-primary">Objetivo</span> Melhorar a
-                  qualidade da educação de 500 crianças
-                </li>
-                <li>
-                  <span class="badge badge-secondary">Duração</span> 12 meses
-                </li>
-                <li>
-                  <span class="badge badge-success">Status</span> Em andamento
-                </li>
-                <li>
-                  <span class="badge badge-info">Impacto</span> 350 crianças
-                  beneficiadas
-                </li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="card col-12 md:col-6">
-            <div class="card-header">Projeto Alimentação Solidária</div>
-            <div class="card-body">
-              <figure>
-                <img
-                  src="assets/images/projeto-alimentacao.jpg"
-                  alt="Distribuição de alimentos para famílias"
-                  width="600"
-                  height="400"
-                />
-                <figcaption>
-                  Distribuição de alimentos do projeto Alimentação Solidária
-                </figcaption>
-              </figure>
-              <p>
-                Iniciativa que distribui cestas básicas e oferece refeições
-                nutritivas para famílias em situação de insegurança alimentar,
-                garantindo acesso adequado a alimentos de qualidade.
-              </p>
-              <ul>
-                <li>
-                  <span class="badge badge-primary">Objetivo</span> Atender
-                  1.000 famílias mensalmente
-                </li>
-                <li>
-                  <span class="badge badge-secondary">Duração</span> Contínuo
-                </li>
-                <li>
-                  <span class="badge badge-success">Status</span> Em andamento
-                </li>
-                <li>
-                  <span class="badge badge-info">Impacto</span> 800 famílias
-                  atendidas/mês
-                </li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="card col-12 md:col-6">
-            <div class="card-header">Projeto Horta Comunitária</div>
-            <div class="card-body">
-              <figure>
-                <img
-                  src="assets/images/projeto-horta.jpg"
-                  alt="Horta comunitária sendo cultivada"
-                  width="600"
-                  height="400"
-                />
-                <figcaption>
-                  Horta comunitária cultivada por voluntários e comunidade
-                </figcaption>
-              </figure>
-              <p>
-                Projeto que incentiva a criação de hortas comunitárias em áreas
-                urbanas, promovendo segurança alimentar, educação ambiental e
-                geração de renda para comunidades locais.
-              </p>
-              <ul>
-                <li>
-                  <span class="badge badge-primary">Objetivo</span> Criar 20
-                  hortas
-                </li>
-                <li>
-                  <span class="badge badge-secondary">Duração</span> 18 meses
-                </li>
-                <li>
-                  <span class="badge badge-success">Status</span> Em andamento
-                </li>
-                <li>
-                  <span class="badge badge-info">Impacto</span> 12 hortas
-                  implantadas
-                </li>
-              </ul>
-            </div>
-          </article>
-        </div>
+        <div id="projects-list" class="row"></div>
       </section>
 
       <!-- Seção: Oportunidades de Voluntariado -->
@@ -209,22 +96,6 @@
             </ul>
           </div>
         </article>
-
-        <article class="card">
-          <div class="card-header">Como se Tornar Voluntário</div>
-          <div class="card-body">
-            <ol>
-              <li>
-                Acesse a página de
-                <a href="cadastro.html" class="btn btn-link">Cadastro</a>
-              </li>
-              <li>Preencha o formulário completo com suas informações</li>
-              <li>Escolha suas áreas de interesse</li>
-              <li>Aguarde o contato da nossa equipe</li>
-              <li>Participe das ações e projetos</li>
-            </ol>
-          </div>
-        </article>
       </section>
 
       <!-- Seção: Como Doar -->
@@ -266,22 +137,6 @@
             </figure>
           </div>
         </article>
-
-        <article class="card">
-          <div class="card-header">Prestação de Contas</div>
-          <div class="card-body">
-            <div class="alert alert-info mb-md">
-              Publicamos relatórios trimestrais detalhados sobre a aplicação dos
-              recursos arrecadados.
-            </div>
-            <p>
-              Todos os doadores recebem notificações por e-mail com os
-              relatórios de prestação de contas. Nossa organização é auditada
-              anualmente por empresas externas independentes, garantindo máxima
-              transparência e confiabilidade.
-            </p>
-          </div>
-        </article>
       </section>
     </main>
 
@@ -290,11 +145,12 @@
       <p>&copy; 2025 ONG MRQS. Todos os direitos reservados.</p>
       <nav>
         <ul class="flex-center">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Cadastre-se</a></li>
+          <li><a href="#/">Início</a></li>
+          <li><a href="#/projetos">Projetos</a></li>
+          <li><a href="#/cadastro">Cadastre-se</a></li>
         </ul>
       </nav>
     </footer>
+    <script type="module" src="js/app.js" defer></script>
   </body>
 </html>

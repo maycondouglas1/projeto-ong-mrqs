@@ -40,6 +40,10 @@ header {
   background: #fff;
   border-radius: 2px;
   transition: transform var(--transition), opacity var(--transition);
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 /* Menu */
