@@ -12,289 +12,275 @@
       content="projetos sociais, voluntariado, doações, oportunidades, impacto social"
     />
     <title>Projetos Sociais - ONG MRQS</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <body class="page-grid">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <!-- Cabeçalho principal -->
     <header>
-      <h1>ONG MRQS</h1>
-
-      <!-- Navegação principal -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Cadastre-se</a></li>
-        </ul>
-      </nav>
+      <div class="header-inner container">
+        <a href="index.html" class="brand">ONG MRQS</a>
+        <input type="checkbox" id="nav-toggle" aria-label="Abrir menu" />
+        <label for="nav-toggle" aria-hidden="true">
+          <span class="hamburger" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </label>
+        <nav class="primary-nav">
+          <ul class="container">
+            <li><a href="index.html">Início</a></li>
+            <li class="active"><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Cadastre-se</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Conteúdo principal -->
-    <main>
+    <main id="conteudo" class="container">
       <!-- Seção: Projetos em Andamento -->
       <section>
         <h2>Projetos em Andamento</h2>
+        <div class="row">
+          <article class="card col-12 md:col-6">
+            <div class="card-header">Projeto Educação para Todos</div>
+            <div class="card-body">
+              <figure>
+                <img
+                  src="assets/images/projeto-educacao.jpg"
+                  alt="Crianças estudando em sala de aula"
+                  width="600"
+                  height="400"
+                />
+                <figcaption>Projeto Educação para Todos em ação</figcaption>
+              </figure>
+              <p>
+                O projeto visa oferecer aulas de reforço escolar e atividades
+                extracurriculares para crianças e adolescentes em situação de
+                vulnerabilidade social, proporcionando melhorias significativas
+                no desempenho escolar e desenvolvimento pessoal.
+              </p>
+              <ul>
+                <li>
+                  <span class="badge badge-primary">Objetivo</span> Melhorar a
+                  qualidade da educação de 500 crianças
+                </li>
+                <li>
+                  <span class="badge badge-secondary">Duração</span> 12 meses
+                </li>
+                <li>
+                  <span class="badge badge-success">Status</span> Em andamento
+                </li>
+                <li>
+                  <span class="badge badge-info">Impacto</span> 350 crianças
+                  beneficiadas
+                </li>
+              </ul>
+            </div>
+          </article>
 
-        <article>
-          <h3>Projeto Educação para Todos</h3>
-          <figure>
-            <img
-              src="assets/images/projeto-educacao.jpg"
-              alt="Crianças estudando em sala de aula"
-              width="600"
-              height="400"
-            />
-            <figcaption>Projeto Educação para Todos em ação</figcaption>
-          </figure>
-          <p>
-            O projeto visa oferecer aulas de reforço escolar e atividades
-            extracurriculares para crianças e adolescentes em situação de
-            vulnerabilidade social, proporcionando melhorias significativas no
-            desempenho escolar e desenvolvimento pessoal.
-          </p>
-          <ul>
-            <li>
-              <strong>Objetivo:</strong> Melhorar a qualidade da educação de 500
-              crianças
-            </li>
-            <li><strong>Duração:</strong> 12 meses</li>
-            <li><strong>Status:</strong> Em andamento</li>
-            <li>
-              <strong>Impacto:</strong> 350 crianças beneficiadas até o momento
-            </li>
-          </ul>
-        </article>
+          <article class="card col-12 md:col-6">
+            <div class="card-header">Projeto Alimentação Solidária</div>
+            <div class="card-body">
+              <figure>
+                <img
+                  src="assets/images/projeto-alimentacao.jpg"
+                  alt="Distribuição de alimentos para famílias"
+                  width="600"
+                  height="400"
+                />
+                <figcaption>
+                  Distribuição de alimentos do projeto Alimentação Solidária
+                </figcaption>
+              </figure>
+              <p>
+                Iniciativa que distribui cestas básicas e oferece refeições
+                nutritivas para famílias em situação de insegurança alimentar,
+                garantindo acesso adequado a alimentos de qualidade.
+              </p>
+              <ul>
+                <li>
+                  <span class="badge badge-primary">Objetivo</span> Atender
+                  1.000 famílias mensalmente
+                </li>
+                <li>
+                  <span class="badge badge-secondary">Duração</span> Contínuo
+                </li>
+                <li>
+                  <span class="badge badge-success">Status</span> Em andamento
+                </li>
+                <li>
+                  <span class="badge badge-info">Impacto</span> 800 famílias
+                  atendidas/mês
+                </li>
+              </ul>
+            </div>
+          </article>
 
-        <article>
-          <h3>Projeto Alimentação Solidária</h3>
-          <figure>
-            <img
-              src="assets/images/projeto-alimentacao.jpg"
-              alt="Distribuição de alimentos para famílias"
-              width="600"
-              height="400"
-            />
-            <figcaption>
-              Distribuição de alimentos do projeto Alimentação Solidária
-            </figcaption>
-          </figure>
-          <p>
-            Iniciativa que distribui cestas básicas e oferece refeições
-            nutritivas para famílias em situação de insegurança alimentar,
-            garantindo acesso adequado a alimentos de qualidade.
-          </p>
-          <ul>
-            <li>
-              <strong>Objetivo:</strong> Atender 1.000 famílias mensalmente
-            </li>
-            <li><strong>Duração:</strong> Contínuo</li>
-            <li><strong>Status:</strong> Em andamento</li>
-            <li>
-              <strong>Impacto:</strong> 800 famílias atendidas mensalmente
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Projeto Horta Comunitária</h3>
-          <figure>
-            <img
-              src="assets/images/projeto-horta.jpg"
-              alt="Horta comunitária sendo cultivada"
-              width="600"
-              height="400"
-            />
-            <figcaption>
-              Horta comunitária cultivada por voluntários e comunidade
-            </figcaption>
-          </figure>
-          <p>
-            Projeto que incentiva a criação de hortas comunitárias em áreas
-            urbanas, promovendo segurança alimentar, educação ambiental e
-            geração de renda para comunidades locais.
-          </p>
-          <ul>
-            <li><strong>Objetivo:</strong> Criar 20 hortas comunitárias</li>
-            <li><strong>Duração:</strong> 18 meses</li>
-            <li><strong>Status:</strong> Em andamento</li>
-            <li><strong>Impacto:</strong> 12 hortas já implantadas</li>
-          </ul>
-        </article>
+          <article class="card col-12 md:col-6">
+            <div class="card-header">Projeto Horta Comunitária</div>
+            <div class="card-body">
+              <figure>
+                <img
+                  src="assets/images/projeto-horta.jpg"
+                  alt="Horta comunitária sendo cultivada"
+                  width="600"
+                  height="400"
+                />
+                <figcaption>
+                  Horta comunitária cultivada por voluntários e comunidade
+                </figcaption>
+              </figure>
+              <p>
+                Projeto que incentiva a criação de hortas comunitárias em áreas
+                urbanas, promovendo segurança alimentar, educação ambiental e
+                geração de renda para comunidades locais.
+              </p>
+              <ul>
+                <li>
+                  <span class="badge badge-primary">Objetivo</span> Criar 20
+                  hortas
+                </li>
+                <li>
+                  <span class="badge badge-secondary">Duração</span> 18 meses
+                </li>
+                <li>
+                  <span class="badge badge-success">Status</span> Em andamento
+                </li>
+                <li>
+                  <span class="badge badge-info">Impacto</span> 12 hortas
+                  implantadas
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </section>
 
       <!-- Seção: Oportunidades de Voluntariado -->
       <section>
         <h2>Oportunidades de Voluntariado</h2>
-        <p>
-          Junte-se a nós e faça a diferença! Temos diversas oportunidades para
-          você contribuir com seu tempo e talento.
-        </p>
-
-        <article>
-          <h3>Como Funciona</h3>
-          <p>
-            Nosso sistema de voluntariado permite que você escolha projetos
-            alinhados com seus interesses e disponibilidade. Após o cadastro,
-            você poderá se candidatar a vagas específicas e acompanhar seu
-            histórico de participação.
-          </p>
-
-          <figure>
-            <img
-              src="assets/images/voluntarios.png"
-              alt="Grupo de voluntários trabalhando juntos"
-              width="600"
-              height="400"
-            />
-            <figcaption>Voluntários engajados em nossos projetos</figcaption>
-          </figure>
+        <article class="card">
+          <div class="card-header">Como Funciona</div>
+          <div class="card-body">
+            <p>
+              Nosso sistema de voluntariado permite que você escolha projetos
+              alinhados com seus interesses e disponibilidade. Após o cadastro,
+              você poderá se candidatar a vagas específicas e acompanhar seu
+              histórico de participação.
+            </p>
+            <figure>
+              <img
+                src="assets/images/voluntarios.png"
+                alt="Grupo de voluntários trabalhando juntos"
+                width="600"
+                height="400"
+              />
+              <figcaption>Voluntários engajados em nossos projetos</figcaption>
+            </figure>
+          </div>
         </article>
 
-        <article>
-          <h3>Áreas de Atuação</h3>
-          <ul>
-            <li>
-              <strong>Educação:</strong> Aulas de reforço, alfabetização,
-              oficinas culturais
-            </li>
-            <li>
-              <strong>Assistência Social:</strong> Distribuição de alimentos,
-              atendimento às famílias
-            </li>
-            <li>
-              <strong>Meio Ambiente:</strong> Hortas, coleta seletiva, educação
-              ambiental
-            </li>
-            <li>
-              <strong>Comunicação:</strong> Redes sociais, fotografia, vídeos
-            </li>
-            <li>
-              <strong>Administração:</strong> Organização, planejamento, gestão
-            </li>
-          </ul>
+        <article class="card">
+          <div class="card-header">Áreas de Atuação</div>
+          <div class="card-body">
+            <ul>
+              <li>
+                <strong>Educação:</strong> Aulas de reforço, alfabetização,
+                oficinas culturais
+              </li>
+              <li>
+                <strong>Assistência Social:</strong> Distribuição de alimentos,
+                atendimento às famílias
+              </li>
+              <li>
+                <strong>Meio Ambiente:</strong> Hortas, coleta seletiva,
+                educação ambiental
+              </li>
+              <li>
+                <strong>Comunicação:</strong> Redes sociais, fotografia, vídeos
+              </li>
+              <li>
+                <strong>Administração:</strong> Organização, planejamento,
+                gestão
+              </li>
+            </ul>
+          </div>
         </article>
 
-        <article>
-          <h3>Benefícios de Ser Voluntário</h3>
-          <ul>
-            <li>Experiência prática em projetos sociais</li>
-            <li>Certificados digitais de participação</li>
-            <li>Networking e conexões valiosas</li>
-            <li>Desenvolvimento pessoal e profissional</li>
-            <li>Contribuição efetiva para a transformação social</li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Como se Tornar Voluntário</h3>
-          <ol>
-            <li>Acesse a página de <a href="cadastro.html">Cadastro</a></li>
-            <li>Preencha o formulário completo com suas informações</li>
-            <li>Escolha suas áreas de interesse</li>
-            <li>Aguarde o contato da nossa equipe</li>
-            <li>Participe das ações e projetos</li>
-          </ol>
+        <article class="card">
+          <div class="card-header">Como se Tornar Voluntário</div>
+          <div class="card-body">
+            <ol>
+              <li>
+                Acesse a página de
+                <a href="cadastro.html" class="btn btn-link">Cadastro</a>
+              </li>
+              <li>Preencha o formulário completo com suas informações</li>
+              <li>Escolha suas áreas de interesse</li>
+              <li>Aguarde o contato da nossa equipe</li>
+              <li>Participe das ações e projetos</li>
+            </ol>
+          </div>
         </article>
       </section>
 
       <!-- Seção: Como Doar -->
       <section>
         <h2>Como Doar</h2>
-        <p>
-          Sua doação é fundamental para mantermos nossos projetos e ampliar
-          nosso impacto. Todo recurso é aplicado de forma transparente e você
-          pode acompanhar os resultados.
-        </p>
+        <article class="card">
+          <div class="card-header">Formas de Doação</div>
+          <div class="card-body">
+            <h4>Doação Online</h4>
+            <p>
+              Realize doações de forma rápida e segura através do nosso sistema
+              online. Aceitamos cartões de crédito, débito e PIX.
+            </p>
 
-        <article>
-          <h3>Formas de Doação</h3>
+            <h4>Transferência Bancária</h4>
+            <p>
+              Você pode fazer transferências diretas para nossa conta bancária:
+            </p>
+            <ul>
+              <li><strong>Banco:</strong> Banco do Brasil</li>
+              <li><strong>Agência:</strong> 0000-0</li>
+              <li><strong>Conta Corrente:</strong> 00000-0</li>
+              <li><strong>CNPJ:</strong> 00.000.000/0001-00</li>
+            </ul>
 
-          <h4>Doação Online</h4>
-          <p>
-            Realize doações de forma rápida e segura através do nosso sistema
-            online. Aceitamos cartões de crédito, débito e PIX.
-          </p>
-
-          <h4>Transferência Bancária</h4>
-          <p>
-            Você pode fazer transferências diretas para nossa conta bancária:
-          </p>
-          <ul>
-            <li><strong>Banco:</strong> Banco do Brasil</li>
-            <li><strong>Agência:</strong> 0000-0</li>
-            <li><strong>Conta Corrente:</strong> 00000-0</li>
-            <li><strong>CNPJ:</strong> 00.000.000/0001-00</li>
-          </ul>
-
-          <h4>PIX</h4>
-          <p>Doações via PIX são instantâneas:</p>
-          <ul>
-            <li><strong>Chave PIX:</strong> contato@ongmrqs.org.br</li>
-          </ul>
-
-          <figure>
-            <img
-              src="assets/images/doacoes.jpg"
-              alt="Mão segurando símbolo de coração representando doações"
-              width="600"
-              height="400"
-            />
-            <figcaption>Sua doação transforma vidas</figcaption>
-          </figure>
+            <h4>PIX</h4>
+            <p>Doações via PIX são instantâneas:</p>
+            <ul>
+              <li><strong>Chave PIX:</strong> contato@ongmrqs.org.br</li>
+            </ul>
+            <figure>
+              <img
+                src="assets/images/doacoes.jpg"
+                alt="Mão segurando símbolo de coração representando doações"
+                width="600"
+                height="400"
+              />
+              <figcaption>Sua doação transforma vidas</figcaption>
+            </figure>
+          </div>
         </article>
 
-        <article>
-          <h3>Onde o Seu Dinheiro é Aplicado</h3>
-          <p>
-            Garantimos total transparência na aplicação dos recursos
-            arrecadados:
-          </p>
-          <ul>
-            <li>
-              75% dos recursos são direcionados diretamente para os projetos
-            </li>
-            <li>15% são utilizados para custos operacionais</li>
-            <li>10% são destinados a expansão e novos projetos</li>
-          </ul>
-          <p>
-            Todos os recursos são auditados e relatórios são publicados
-            trimestralmente em nossa área de transparência.
-          </p>
-        </article>
-
-        <article>
-          <h3>Metas e Progresso</h3>
-          <p>
-            Acompanhe em tempo real o progresso de nossas campanhas de
-            arrecadação:
-          </p>
-          <ul>
-            <li>
-              <strong>Projeto Educação para Todos:</strong> R$ 450.000
-              arrecadados de R$ 500.000 (90%)
-            </li>
-            <li>
-              <strong>Projeto Alimentação Solidária:</strong> R$ 120.000
-              arrecadados de R$ 150.000 (80%)
-            </li>
-            <li>
-              <strong>Projeto Horta Comunitária:</strong> R$ 80.000 arrecadados
-              de R$ 100.000 (80%)
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>Prestação de Contas</h3>
-          <p>
-            Publicamos relatórios trimestrais detalhados sobre a aplicação de
-            todos os recursos arrecadados. Todos os doadores recebem
-            notificações por e-mail com os relatórios de prestação de contas.
-          </p>
-          <p>
-            Nossa organização é auditada anualmente por empresas externas
-            independentes, garantindo máxima transparência e confiabilidade.
-          </p>
+        <article class="card">
+          <div class="card-header">Prestação de Contas</div>
+          <div class="card-body">
+            <div class="alert alert-info mb-md">
+              Publicamos relatórios trimestrais detalhados sobre a aplicação dos
+              recursos arrecadados.
+            </div>
+            <p>
+              Todos os doadores recebem notificações por e-mail com os
+              relatórios de prestação de contas. Nossa organização é auditada
+              anualmente por empresas externas independentes, garantindo máxima
+              transparência e confiabilidade.
+            </p>
+          </div>
         </article>
       </section>
     </main>
@@ -302,9 +288,8 @@
     <!-- Rodapé -->
     <footer>
       <p>&copy; 2025 ONG MRQS. Todos os direitos reservados.</p>
-      <p>Desenvolvido com dedicação para fazer a diferença na sociedade.</p>
       <nav>
-        <ul>
+        <ul class="flex-center">
           <li><a href="index.html">Início</a></li>
           <li><a href="projetos.html">Projetos</a></li>
           <li><a href="cadastro.html">Cadastre-se</a></li>
