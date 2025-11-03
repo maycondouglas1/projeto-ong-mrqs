@@ -1,0 +1,105 @@
+/* Layout - Grid principal e sistema 12 colunas */
+
+/* Grid principal da página (áreas) */
+.page-grid {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+}
+
+header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav.primary-nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+/* Container e grid de 12 colunas */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-md);
+}
+
+/* Colunas responsivas básicas */
+[class^="col-"] {
+  min-width: 0;
+}
+.col-12 {
+  grid-column: span 12;
+}
+.col-6 {
+  grid-column: span 6;
+}
+.col-4 {
+  grid-column: span 4;
+}
+.col-3 {
+  grid-column: span 3;
+}
+
+/* Breakpoints */
+@media (min-width: 576px) {
+  .sm\:col-6 {
+    grid-column: span 6;
+  }
+  .sm\:col-4 {
+    grid-column: span 4;
+  }
+}
+@media (min-width: 768px) {
+  .md\:col-6 {
+    grid-column: span 6;
+  }
+  .md\:col-4 {
+    grid-column: span 4;
+  }
+  .md\:col-3 {
+    grid-column: span 3;
+  }
+  .page-grid {
+    grid-template-areas: "header" "nav" "main" "footer";
+  }
+}
+@media (min-width: 992px) {
+  .lg\:col-8 {
+    grid-column: span 8;
+  }
+  .lg\:col-4 {
+    grid-column: span 4;
+  }
+}
+@media (min-width: 1200px) {
+  .xl\:col-9 {
+    grid-column: span 9;
+  }
+  .xl\:col-3 {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 1400px) {
+  .xxl\:col-10 {
+    grid-column: span 10;
+  }
+  .xxl\:col-2 {
+    grid-column: span 2;
+  }
+}

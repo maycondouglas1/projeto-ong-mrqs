@@ -1,0 +1,115 @@
+/* Navegação - Desktop e Mobile (hambúrguer) */
+header {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  color: #fff;
+  padding: var(--spacing-lg) var(--spacing-md);
+  box-shadow: var(--shadow-md);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+}
+.brand {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-2xl);
+  color: #fff;
+}
+
+/* Toggle (checkbox) */
+#nav-toggle {
+  display: none;
+}
+.hamburger {
+  display: inline-flex;
+  flex-direction: column;
+  width: 28px;
+  height: 22px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+/* Menu */
+.primary-nav {
+  background: transparent;
+}
+
+.primary-nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-md);
+  margin: 0;
+  padding: 0;
+}
+
+.primary-nav a {
+  color: #fff;
+  font-weight: var(--font-weight-medium);
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background var(--transition-fast);
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+.primary-nav .active > a {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .primary-nav ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: linear-gradient(
+      135deg,
+      var(--color-primary-dark),
+      var(--color-secondary)
+    );
+    flex-direction: column;
+    gap: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform var(--transition), opacity var(--transition);
+  }
+  .primary-nav li {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .primary-nav a {
+    display: block;
+    padding: 14px var(--spacing-md);
+  }
+  #nav-toggle:checked + label .hamburger span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  #nav-toggle:checked + label .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  #nav-toggle:checked + label .hamburger span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  #nav-toggle:checked ~ nav.primary-nav ul {
+    transform: scaleY(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
