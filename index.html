@@ -19,9 +19,7 @@
     <!-- Cabeçalho principal -->
     <header>
       <div class="header-inner container">
-        <a href="index.html" class="brand" aria-label="ONG MRQS - Início"
-          >ONG MRQS</a
-        >
+        <a href="#/" class="brand" aria-label="ONG MRQS - Início">ONG MRQS</a>
 
         <input type="checkbox" id="nav-toggle" aria-label="Abrir menu" />
         <label for="nav-toggle" aria-hidden="true">
@@ -35,16 +33,31 @@
         <!-- Navegação principal -->
         <nav class="primary-nav">
           <ul class="container">
-            <li class="active"><a href="index.html">Início</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="cadastro.html">Cadastre-se</a></li>
+            <li class="active"><a href="#/">Início</a></li>
+            <li><a href="#/projetos">Projetos</a></li>
+            <li><a href="#/cadastro">Cadastre-se</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- Conteúdo principal -->
     <main id="conteudo" class="container">
+      <!-- Hero Section -->
+      <section class="hero mb-lg mt-lg">
+        <div class="fade-up">
+          <h1>Transforme Vidas com a <strong>ONG MRQS</strong></h1>
+          <p class="mt-sm">
+            Junte-se a milhares de voluntários e apoiadores na construção de um
+            futuro mais justo. Doe, participe de projetos e acompanhe nossos
+            resultados com transparência.
+          </p>
+          <div class="actions mt-md">
+            <a href="#/projetos" class="btn btn-primary">Conhecer Projetos</a>
+            <a href="#/cadastro" class="btn btn-outline">Quero Participar</a>
+          </div>
+        </div>
+      </section>
+
       <!-- Seção: Apresentação Institucional -->
       <section>
         <h2>Sobre Nossa Organização</h2>
@@ -191,41 +204,6 @@
           </div>
         </article>
       </section>
-
-      <!-- Seção: Dados de Contato -->
-      <section>
-        <h2>Entre em Contato</h2>
-        <article class="card">
-          <div class="card-header">Informações de Contato</div>
-          <div class="card-body">
-            <address>
-              <p>
-                <strong>Endereço:</strong> Rua das ONGs, 123 - Centro, Cidade -
-                Estado, CEP 00000-000
-              </p>
-              <p><strong>Telefone:</strong> (00) 00000-0000</p>
-              <p><strong>E-mail:</strong> contato@ongmrqs.org.br</p>
-              <p>
-                <strong>Horário de Funcionamento:</strong> Segunda a Sexta, das
-                9h às 18h
-              </p>
-            </address>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-header">Redes Sociais</div>
-          <div class="card-body">
-            <p>Siga-nos nas redes sociais e acompanhe nossas ações:</p>
-            <ul>
-              <li>Facebook: @ongmrqs</li>
-              <li>Instagram: @ongmrqs</li>
-              <li>Twitter: @ongmrqs</li>
-              <li>LinkedIn: ONG MRQS</li>
-            </ul>
-          </div>
-        </article>
-      </section>
     </main>
 
     <!-- Rodapé -->
@@ -233,11 +211,12 @@
       <p>&copy; 2025 ONG MRQS. Todos os direitos reservados.</p>
       <nav>
         <ul class="flex-center">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Cadastre-se</a></li>
+          <li><a href="#/">Início</a></li>
+          <li><a href="#/projetos">Projetos</a></li>
+          <li><a href="#/cadastro">Cadastre-se</a></li>
         </ul>
       </nav>
     </footer>
+    <script type="module" src="js/app.js" defer></script>
   </body>
 </html>
