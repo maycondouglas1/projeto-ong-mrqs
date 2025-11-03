@@ -3,9 +3,11 @@ import { Toast } from "./components/toast.js";
 import { initForms } from "./modules/forms.js";
 import { initProjectsModule } from "./modules/projects.js";
 import { initRouter } from "./router.js";
+import { ThemeManager, createThemeToggle } from "./modules/theme.js";
 
 // Instância global de toast
 export const toast = new Toast();
+export const themeManager = new ThemeManager();
 
 function initGlobalNavEnhancements() {
   // Scroll suave para âncoras internas
@@ -46,5 +48,8 @@ function _domInit() {
     initProjectsModule();
     initForms();
     initGlobalNavEnhancements();
+
+    const themeToggle = createThemeToggle();
+    document.body.appendChild(themeToggle);
   });
 }

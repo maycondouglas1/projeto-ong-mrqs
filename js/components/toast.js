@@ -2,6 +2,9 @@
 export class Toast {
   constructor() {
     this.container = document.createElement("div");
+    this.container.setAttribute("role", "status");
+    this.container.setAttribute("aria-live", "polite");
+    this.container.setAttribute("aria-atomic", "true");
 
     Object.assign(this.container.style, {
       position: "fixed",
@@ -19,10 +22,10 @@ export class Toast {
   show(message, type = "info", timeout = 3000) {
     const el = document.createElement("div");
     el.className = `alert alert-${type}`;
+    el.setAttribute("role", type === "error" ? "alert" : "status");
     el.textContent = message;
     el.style.boxShadow = "var(--shadow-md)";
 
-    // Adiciona o elemento ao container e remove após timeout
     this.container.appendChild(el);
     setTimeout(() => el.remove(), timeout);
   }
