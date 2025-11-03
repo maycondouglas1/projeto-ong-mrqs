@@ -2,6 +2,14 @@
 
 Site institucional da ONG MRQS (Organização Não Governamental fictícia) desenvolvido como projeto universitário de desenvolvimento web. Uma Single Page Application (SPA) moderna, acessível e otimizada, construída com HTML5, CSS3 e JavaScript vanilla.
 
+## Branches
+
+- **main**: Contém todas as entregas e código atual
+- **feat/entrega-1**: Contém código da Entrega 1 da atividade
+- **feat/entrega-2**: Contém código da Entrega 2 da atividade
+- **feat/entrega-3**: Contém código da Entrega 3 da atividade
+- **feat/entrega-4**: Contém código da Entrega 4 da atividade
+
 ## Características
 
 - **SPA com Roteamento**: Navegação sem reload usando History API
