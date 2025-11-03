@@ -17,12 +17,19 @@
   <body class="page-grid">
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <!-- Cabeçalho principal -->
-    <header>
+    <header role="banner">
       <div class="header-inner container">
-        <a href="#/" class="brand" aria-label="ONG MRQS - Início">ONG MRQS</a>
+        <a href="#/" class="brand" aria-label="ONG MRQS - Voltar para o início"
+          >ONG MRQS</a
+        >
 
-        <input type="checkbox" id="nav-toggle" aria-label="Abrir menu" />
-        <label for="nav-toggle" aria-hidden="true">
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          aria-label="Abrir menu de navegação"
+          aria-controls="primary-nav"
+        />
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
           <span class="hamburger" aria-hidden="true">
             <span></span>
             <span></span>
@@ -30,10 +37,13 @@
           </span>
         </label>
 
-        <!-- Navegação principal -->
-        <nav class="primary-nav">
+        <nav
+          class="primary-nav"
+          id="primary-nav"
+          aria-label="Navegação principal"
+        >
           <ul class="container">
-            <li class="active"><a href="#/">Início</a></li>
+            <li class="active"><a href="#/" aria-current="page">Início</a></li>
             <li><a href="#/projetos">Projetos</a></li>
             <li><a href="#/cadastro">Cadastre-se</a></li>
           </ul>
@@ -41,28 +51,28 @@
       </div>
     </header>
 
-    <main id="conteudo" class="container">
-      <!-- Hero Section -->
-      <section class="hero mb-lg mt-lg">
+    <main id="conteudo" class="container" role="main">
+      <section class="hero mb-lg mt-lg" aria-labelledby="hero-title">
         <div class="fade-up">
-          <h1>Transforme Vidas com a <strong>ONG MRQS</strong></h1>
+          <h1 id="hero-title">
+            Transforme Vidas com a <strong>ONG MRQS</strong>
+          </h1>
           <p class="mt-sm">
             Junte-se a milhares de voluntários e apoiadores na construção de um
             futuro mais justo. Doe, participe de projetos e acompanhe nossos
             resultados com transparência.
           </p>
-          <div class="actions mt-md">
+          <nav class="actions mt-md" aria-label="Ações principais">
             <a href="#/projetos" class="btn btn-primary">Conhecer Projetos</a>
             <a href="#/cadastro" class="btn btn-outline">Quero Participar</a>
-          </div>
+          </nav>
         </div>
       </section>
 
-      <!-- Seção: Apresentação Institucional -->
-      <section>
-        <h2>Sobre Nossa Organização</h2>
+      <section aria-labelledby="about-title">
+        <h2 id="about-title">Sobre Nossa Organização</h2>
         <article class="card">
-          <div class="card-header">Missão</div>
+          <h3 class="card-header">Missão</h3>
           <div class="card-body">
             <p>
               Nossa missão é promover o desenvolvimento social sustentável
@@ -73,9 +83,10 @@
             <figure>
               <img
                 src="assets/images/missao.jpg"
-                alt="Imagem representando nossa missão de transformar vidas"
+                alt="Voluntários trabalhando juntos em um projeto comunitário, representando nossa missão de transformar vidas"
                 width="600"
                 height="400"
+                loading="lazy"
               />
               <figcaption>
                 Missão: Transformar vidas através de ações solidárias
@@ -85,7 +96,7 @@
         </article>
 
         <article class="card">
-          <div class="card-header">Visão</div>
+          <h3 class="card-header">Visão</h3>
           <div class="card-body">
             <p>
               Ser reconhecida como uma das principais organizações não
@@ -98,9 +109,9 @@
         </article>
 
         <article class="card">
-          <div class="card-header">Valores</div>
+          <h3 class="card-header">Valores</h3>
           <div class="card-body">
-            <ul>
+            <ul aria-label="Lista de valores organizacionais">
               <li>
                 <strong>Transparência:</strong> Todas as nossas ações são
                 documentadas e públicas
@@ -126,12 +137,11 @@
         </article>
       </section>
 
-      <!-- Seção: Histórico e Conquistas -->
-      <section>
-        <h2>Nossa História</h2>
+      <section aria-labelledby="history-title">
+        <h2 id="history-title">Nossa História</h2>
         <div class="row">
           <article class="card col-12 md:col-6">
-            <div class="card-header">Como Tudo Começou</div>
+            <h3 class="card-header">Como Tudo Começou</h3>
             <div class="card-body">
               <p>
                 Fundada em 2015, nossa organização nasceu da vontade de um grupo
@@ -143,9 +153,10 @@
               <figure>
                 <img
                   src="assets/images/historia.jpg"
-                  alt="Foto histórica da fundação da organização"
+                  alt="Membros fundadores da ONG em reunião no ano de 2015, mostrando o início da organização"
                   width="600"
                   height="400"
+                  loading="lazy"
                 />
                 <figcaption>Momentos marcantes da nossa trajetória</figcaption>
               </figure>
@@ -153,9 +164,9 @@
           </article>
 
           <article class="card col-12 md:col-6">
-            <div class="card-header">Principais Conquistas</div>
+            <h3 class="card-header">Principais Conquistas</h3>
             <div class="card-body">
-              <ul>
+              <ul aria-label="Lista de principais conquistas">
                 <li>Mais de 10.000 voluntários cadastrados</li>
                 <li>150+ projetos desenvolvidos e finalizados</li>
                 <li>R$ 5 milhões arrecadados em doações</li>
@@ -167,11 +178,10 @@
         </div>
       </section>
 
-      <!-- Seção: Equipe e Estrutura -->
-      <section>
-        <h2>Nossa Equipe</h2>
+      <section aria-labelledby="team-title">
+        <h2 id="team-title">Nossa Equipe</h2>
         <article class="card">
-          <div class="card-header">Estrutura Organizacional</div>
+          <h3 class="card-header">Estrutura Organizacional</h3>
           <div class="card-body">
             <p>
               Nossa organização é composta por uma equipe multidisciplinar de
@@ -181,9 +191,10 @@
             <figure>
               <img
                 src="assets/images/equipe.jpg"
-                alt="Foto da equipe da organização"
+                alt="Equipe completa da ONG reunida, composta por profissionais e voluntários"
                 width="600"
                 height="400"
+                loading="lazy"
               />
               <figcaption>
                 Equipe comprometida com a transformação social
@@ -193,9 +204,9 @@
         </article>
 
         <article class="card">
-          <div class="card-header">Diretoria</div>
+          <h3 class="card-header">Diretoria</h3>
           <div class="card-body">
-            <ul>
+            <ul aria-label="Lista de membros da diretoria">
               <li><strong>Diretora Executiva:</strong> Maria Silva</li>
               <li><strong>Diretor de Projetos:</strong> João Santos</li>
               <li><strong>Diretora de Comunicação:</strong> Ana Costa</li>
@@ -206,10 +217,9 @@
       </section>
     </main>
 
-    <!-- Rodapé -->
-    <footer>
+    <footer role="contentinfo">
       <p>&copy; 2025 ONG MRQS. Todos os direitos reservados.</p>
-      <nav>
+      <nav aria-label="Navegação do rodapé">
         <ul class="flex-center">
           <li><a href="#/">Início</a></li>
           <li><a href="#/projetos">Projetos</a></li>
